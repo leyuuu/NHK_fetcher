@@ -16,7 +16,6 @@ async function downloadHere(url: string){
     for await(const chunk of res.body!) {
         await Deno.writeAll(file, chunk);
     }
-    await res.body?.cancel();
 }
 
 eval(data)
