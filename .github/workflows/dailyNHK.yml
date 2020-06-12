@@ -1,6 +1,7 @@
 on:
   schedule:
-  - cron: "0 22 * * *"
+  - cron: "30 22 * * *"
+  # 这个档是NHK 7点新闻
 jobs:
   daliyNHK:
     name: daliyNHK
